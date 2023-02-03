@@ -56,7 +56,8 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
-    max-width: 485px;
+    min-width: 485px;
+    max-width: 486px;
 }
 header {
     background-color: #ffffff;
@@ -143,6 +144,7 @@ figcaption {
 footer {
     color: #ffffff;
     text-align: center;
+    margin-top: 50px;
 }
 p.figCapWhite {
     color: #ffffff
@@ -153,4 +155,110 @@ figcaption.figCapWhite {
 }
 #bottomCap {
     padding-top: 580px;
+}
+label, input {
+    display: grid;
+    grid-template-rows: repeat(3,6px);
+}
+input {
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #007d7b;
+    padding-left: 10px;
+}
+label {
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 55px;
+}
+::placeholder {
+    color: #007d7b;
+}
+#contact p ~ p {
+    visibility: hidden;
+}
+button {
+    background-color: #007d7b;
+    border: 0;
+    border-radius: 1em;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 225px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+}
+small {
+    text-transform: uppercase;
+}
+/* ------- medium size Media queries---------- */
+@media screen and (min-width:880px) {
+    body {
+        max-width: 880px;
+    }
+    header {
+        display: flex;
+        padding-left: 10px;
+    }
+    input {
+        width: 720px;
+    }
+    section#gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       }
+    section#gallery h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    section#gallery h2 ~ p {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    label {
+        margin-left: 90px;
+    }
+    button {
+        width: 400px;
+    }
+}
+/* ------- large size Media queries---------- */
+@media screen and (min-width:1300px) {
+    body {
+        max-width: 1300px;
+    }
+    header {
+        display: flex;
+        padding-left: 10px;
+    }
+    nav ul {
+        text-align: right;
+    }
+    section#gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+    section#gallery h2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    section#gallery h2 ~ p {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    input {
+        width: 1000px;
+    }
+    label {
+        margin-left: 163px;
+    }
+    button {
+        width: 575px;
+    }
 }
