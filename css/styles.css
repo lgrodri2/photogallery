@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*----------------------------------*/
+html {
+    box-sizing: border-box;
+    background-color:#000000;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 485px;
+}
+header {
+    background-color: #ffffff;
+    text-align: center;
+}
+nav li {
+    display: inline;
+    
+}
+nav ul {
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px;
+}
+nav h2 {
+    visibility: hidden;
+}
+[href="#top"] {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+}
+main {
+    background-color: #ffffff;
+}
+h1 {
+    font-size: 3em;
+    color: #007d7b;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h2 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+main h2 {
+    font-weight: bold;
+    padding: 25px;
+}
+p {
+    font-size: 1.25em;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+figcaption, label, input, small {
+    font-size: 1em;
+}
+section > figure {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+figure img {
+    display: block;
+}
+figcaption { 
+    display: grid;
+    position: absolute;
+    text-transform: uppercase;  
+    top: 10px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
+#contact {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+footer {
+    color: #ffffff;
+    text-align: center;
+}
+p.figCapWhite {
+    color: #ffffff
+}
+figcaption.figCapWhite {
+    color: #ffffff;
+    padding-top: 230px;
+}
+#bottomCap {
+    padding-top: 580px;
+}
